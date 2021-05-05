@@ -1,0 +1,10 @@
+﻿<script type="text/javascript">
+function ConfirmationDialog() {
+if(confirm("Are you sure to continue?"))
+return true;
+else
+return false;
+}
+</script>
+
+@Html.ActionLink("Click to Confirm", "Confirmation", null, new { onclick = "return ConfirmationDialog()" })
